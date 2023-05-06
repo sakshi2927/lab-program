@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.Math;
+public class program2{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+     
+      
+      System.out.println("enter time :");
+      double t =sc.nextDouble();
+      System.out.println("enter rate:");
+      double r =sc.nextDouble();      
+      System.out.println("enter principle:");
+      double p=sc.nextDouble();
+      
+      double si=(p*t*r)/100;
+      double r1=Math.pow(1+r/100,t);
+      double ci=p*(r1)-p;
+      System.out.println("simple interest="+si);
+     System.out.println("compound interest="+ci);
+     
+    }
+
+}
