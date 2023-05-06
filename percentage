@@ -1,0 +1,24 @@
+import java.util.*;
+public class program1{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        
+      int math,phy,chem,eng,bio,sum,percentage;
+      System.out.println("enter marks of 5 subjects:");
+      System.out.println("enter math marks:");
+      int m1 =sc.nextInt();
+      System.out.println("enter phy marks:");
+      int m2 =sc.nextInt();      
+      System.out.println("enter chem marks:");
+      int m3 =sc.nextInt();
+      System.out.println("enter eng marks:");
+      int m4=sc.nextInt();
+      System.out.println("enter bio marks:");
+      int m5=sc.nextInt();
+      sum=m1+m2+m3+m4+m5;
+      System.out.println("sum="+sum);
+      percentage=sum/5;
+      System.out.println("percentage="+percentage);
+    }
+
+}
