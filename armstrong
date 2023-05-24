@@ -1,15 +1,23 @@
-import java.util.*;
-public class program18 {
+
+    import java.util.*;
+public class program19 {
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
        System.out.println("enter number");
        int n=sc.nextInt();
-       int rev=0,rem;
+       int arm=0,rem;
+       int temp=n;
        while(n>0){
         rem=n%10; 
-        rev=rev*10+rem;
+        arm=arm+(rem*rem*rem);
         n=n/10;
        }
-       System.out.println("the reverse is "+ rev);
+       if(temp==arm){
+System.out.println(temp+"is armstrong");
+       }
+       else{
+        System.out.println(temp+"is not armstrong");
+       }
+       
     }
 }
